@@ -1,6 +1,6 @@
 <template>
   <div class="coming-soon">
-    <span class="coming-soon-logo-container" :style="backgroundImageStyle"/>
+    <img class="center-image" src="../assets/Evil-Tome-Coming-Soon.svg" alt="The Eye Will Open Soon"/>
     <span class="social-media-links">
       <h3>Follow Us</h3>
       <a class="social-media-link" href="https://facebook.com/EvilTomeGames">Facebook</a>
@@ -14,14 +14,6 @@ export default {
   name: 'ComingSoon',
   props: {
     msg: String
-  },
-  computed: {
-    backgroundImage(){
-      return require("../assets/ComingSoonLogo.png");
-    },
-    backgroundImageStyle(){
-      return {backgroundImage: "url(" + this.backgroundImage + ")"};
-    },
   }
 }
 </script>
@@ -51,12 +43,11 @@ a:hover {
   min-height: 100vh;
   position: relative;
 }
-.coming-soon-logo-container {
-  width: 500px;
-  height: 550px;
+.center-image {
+  width: 75vw;
+  max-width: 500px;
   display: inline-block;
-  background-size: 500px;
-  margin-top: 100px;
+  margin-top: 5vh;
 }
 .social-media-link {
   margin: 10px;
