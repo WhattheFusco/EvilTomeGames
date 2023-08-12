@@ -43,21 +43,33 @@
                       color="#404040"
                     />
                 </div>
-                <div class="stat-line col-sm-12 col-lg-6">
-                    <button class="action-button" style="background-color: #367a54" @click="handleRoll($event, 'physicalDefense')">Physical Defense</button>
-                    <button class="action-button" style="background-color: #367a54" @click="handleRoll($event, 'specialDefense')">Special Defense</button>
-                </div>
-                <div class="stat-line col-sm-12 col-lg-6">
+                <div class="row">
+                  <div class="button-line col-xs-12 col-sm-6 col-lg-3">
+                      <button class="action-button" style="background-color: #367a54" @click="handleRoll($event, 'physicalDefense')">Physical Defense</button>
+                  </div>
+                  <div class="button-line col-xs-12 col-sm-6 col-lg-3">
+                      <button class="action-button" style="background-color: #367a54" @click="handleRoll($event, 'specialDefense')">Special Defense</button>
+                  </div>
+                  <div class="button-line col-xs-12 col-sm-6 col-lg-3">
                     <button class="action-button" style="background-color: #b44b25" @click="handleRoll($event, 'physicalAttack')">Physical Attack</button>
+                  </div>
+                  <div class="button-line col-xs-12 col-sm-6 col-lg-3">
                     <button class="action-button" style="background-color: #b44b25" @click="handleRoll($event, 'specialAttack')">Special Attack</button>
+                  </div>
                 </div>
-                <div class="stat-line col-sm-12 col-lg-6">
-                    <button class="action-button" @click="handleRoll($event, 'bodyWithstand')">Body Withstand</button>
-                    <button class="action-button" @click="handleRoll($event, 'mindWithstand')">Mind Withstand</button>
-                </div>
-                <div class="stat-line col-sm-12 col-lg-6">
-                    <button class="action-button" @click="handleRoll($event, 'spiritWithstand')">Spirit Withstand</button>
-                    <button class="action-button" @click="handleRoll($event, 'gritWithstand')">Grit Withstand</button>
+                <div class="row">
+                  <div class="button-line col-xs-12 col-sm-6 col-lg-3">
+                      <button class="action-button" @click="handleRoll($event, 'bodyWithstand')">Body Withstand</button>
+                  </div>
+                  <div class="button-line col-xs-12 col-sm-6 col-lg-3">
+                      <button class="action-button" @click="handleRoll($event, 'mindWithstand')">Mind Withstand</button>
+                  </div>
+                  <div class="button-line col-xs-12 col-sm-6 col-lg-3">
+                      <button class="action-button" @click="handleRoll($event, 'spiritWithstand')">Spirit Withstand</button>
+                  </div>
+                  <div class="button-line col-xs-12 col-sm-6 col-lg-3">
+                      <button class="action-button" @click="handleRoll($event, 'gritWithstand')">Grit Withstand</button>
+                  </div>
                 </div>
             </div>
         </div>
@@ -321,18 +333,20 @@ export default {
 .early-techs{
   margin-bottom: 15px;
 }
+.button-line{
+  width: 100%;
+  margin: auto;
+  margin-top: 12px;
+}
 .action-button{
-  margin: 0px 5px;
   border: none;
   color: white;
   background-color: #004659;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 18px;
-  padding: 0px 10px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  width: 150px;
+  width: 100%;
   box-shadow: 0px 1px 2px rgb(0,0,0,0.75);
 }
 
