@@ -1,5 +1,5 @@
 <template>
-  <div class="coming-soon-container">
+  <div class="coming-soon">
     <img class="center-image" src="../assets/Evil-Tome-Coming-Soon.svg" alt="The Eye Will Open Soon"/>
     <span class="social-media-links">
       <h3>Follow Us</h3>
@@ -38,12 +38,10 @@ a {
 a:hover {
   text-decoration: underline;
 }
-.coming-soon-container {
+.coming-soon {
   color: white;
   min-height: 100vh;
-  width: 100%;
   position: relative;
-  background-color: #404041
 }
 .center-image {
   width: 75vw;

@@ -1,19 +1,24 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <ComingSoon/>
   </div>
 </template>
 
 <script>
+import ComingSoon from './components/ComingSoon.vue'
 
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    ComingSoon
+  }
 }
 </script>
 
 <style>
 html{
   height: 100%;
+  background-color: #404041;
 }
 body{
   min-height: 100vh;
@@ -26,5 +31,6 @@ body{
   color: #2c3e50;
   min-height: 100vh;
   position: relative;
+  margin: 0px;
 }
 </style>
