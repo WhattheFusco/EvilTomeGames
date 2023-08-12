@@ -261,7 +261,8 @@ export default {
   position: relative;
 }
 .sidebar{
-  height:100%;
+  min-height: 100vh;
+  height: 100%;
   width:100%;
   background-image: url('../assets/background.jpg');
   background-attachment: fixed;
@@ -315,7 +316,7 @@ export default {
 .stat-block-container{
     width: 92%;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .stat-block{
   box-shadow: 0px 5px 10px rgb(0,0,0,0.25);
